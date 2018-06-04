@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import KMXComponentsPAS from '@k2data/kmx-components-pas/es';
-import { BrowserRouter, Redirect } from 'react-router-dom';
-import connectRedux from './connectReduce';
+import { BrowserRouter } from 'react-router-dom';
 
 const env = {
   API_URL: 'http://192.168.132.8:28085/pas/services/',
@@ -29,4 +28,4 @@ const AppLayout = () => (
   </Switch>
 )
 
-export default connectRedux()(AppLayout);
+export default AppLayout;

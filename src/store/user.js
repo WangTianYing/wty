@@ -1,4 +1,3 @@
-// @flow
 import localforage from 'localforage';
 
 type Profile = {
